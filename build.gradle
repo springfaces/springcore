@@ -37,7 +37,8 @@ dependencies {
     testCompile("junit:junit")
     testCompile("org.springframework.boot:spring-boot-starter-test")
     compile("org.springframework.boot:spring-boot-starter-actuator")	
-}
+  	compile group: 'org.springframework.boot', name: 'spring-boot-starter-aop', version: '1.4.0.RELEASE' 
+  }
 
 task wrapper(type: Wrapper) {
     gradleVersion = '2.3'
