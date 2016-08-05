@@ -1,0 +1,94 @@
+
+Dependency Injection :
+
+
+	Dependency Injection is a software design pattern that allows the removal of hard-coded
+	dependencies and make it possible to change them, whether at run-time or compile-time.
+
+	Given two objects that are dependednt on each other, the deal is to decouple the depende-
+	encies between two objects.
+
+	If every class were to instantiate every object it needs by using the new operator, would
+	it work? Yes, it would! but that also means that the dependencies are tightly coupled. 
+	Every time the object is instantiated, it has the exact same set of dependencies, you'll 
+	need to modify the code of the class.
+
+	Instead, if the object were to only deal with interaces, and have the actual object instance
+	supplied to it by setter methods, it opends the class up to a lot of possibilites. The same
+	class could do different things depending on what instance is supplied to it. And the whole
+	time, the class itself doesn't need to be modified since the class work at the interface level.
+	So, as long as the supplied object implements the interface, no changes to the clas itself 
+	are necessary.
+
+	This is the concept of dependency injection, and Spring provides a framework that simplifies
+	writing code that uses this concept.
+
+
+What is IOC and DI?
+
+    
+Inversion of Control and Dependency Injection is a design pattern provides loose coupling and
+removes the dependency from the program.
+
+    public class Employee {
+        Address address;
+        Employee(Address addres){
+            this.address = address;
+        }
+    }
+    
+    Now there is no dependency between Employee and Address because employee is not forced to use
+    same address instance. It can use any address instance.
+    
+    
+    IOC container is responsible to:
+        create the instance
+        configure the instace, and 
+        assemble the dependencies
+The IOC container is responsbile to instantiate, configure and assemble the objects. The IOC container
+gets information from XML file and works accordingly. The main tasks performed by IOC container are:
+
+    to instantiate the application class
+    to configure the object
+    to assemble the dependencies between the objects
+    
+    
+There are two types of IOC container they are :
+
+    BeanFactory
+    ApplicationContext
+
+The XmlBeanFactory is the implementation class for the BeanFactory interface. To use the BeanFactory, 
+we need to create the instance of XmlBeanFactory class as given below:
+    
+            Resource resource = new ClassPathResource("applicationContext.xml");
+            BeanFactory factory = new XmlBeanFactory(resource);
+
+The constructor of XmlBeanFactory class receives the Resource object so we need to pass the resource 
+object to crate the object of BeanFactory.
+
+
+Using ApplicationContext:
+
+The ClassPathXmlApplicationContext class is the implementation class of ApplicationContext interface.
+We need to instantiate the ClassPathXmlApplicationContext class to use the ApplicationContext as given
+below:
+
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        
+        
+The ApplicationContext had extra functionality than BeanFactory such as simple intergration with 
+spring aop message resource handling event propogation application layer specific context...
+
+
+*********************************************** IOC *************************************************
+
+The basic concept of IOC is that you do not create you objects but describe how they should be created.
+You don't directly connect your components and services together in code but describe which services are
+needed by which components in a configuration file. A container(in the case of spring framework, the ioc 
+container) is then responsible for hooking it all up.
+
+Applying IOC, objects are given their dependencies at creation time by some external entity that coordi-
+nates each object in the system. That is, dependecies are injected in objecs. So, IOC meand an inversion
+of responsibility with regards to how an object obtains references to collaborating objects.
+

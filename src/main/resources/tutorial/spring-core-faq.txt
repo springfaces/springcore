@@ -1,0 +1,80 @@
+1. What is IOC(or Dependency Injection)?
+
+The basic concept of the Inversion of Controll pattern(also known as dependency injection) is that you do not 
+create your objects but describe how they should be created. You don't directly connect your components and 
+services together in code but describe which service are needed by which component in a configuration file. 
+A container(in the case of the spring framework, the IOC container) is then responsible for hooking it all up.
+
+i.e., Applying IOC, objects are given their dependecies at creation time by some external entity that coordinates
+each object in the system. That is, dependencies are injected into objects. So, IoC means an inversion of respon-
+sibility with regards to how an object obtains references to colleberating objects.
+
+
+2. What are the types of IoC(depenedency injection)?
+
+There are three types of dependency injection:
+
+Constructor Injection : Dependencies are provided as a constructor parameters.
+Setter Injection : Dependencies are assigned through java bean properties
+Interface Injection : Injection done through interface.
+
+
+3. What are the benefits of IOC?
+
+Minimizes the amount of code in your application. With IOC container you do not care about how services
+are created and how you get references to the one you need. You can also easily add additional services
+by adding new construtor or a setter method with little or no extra configuration.
+
+
+Make your application more testable by not requring any singltons or JNDI lookup mechanisms in your unit
+test cases. IOC container make junit testing and switchign implementations very easy by manually allowing
+you to inject your own objects into the object under test.
+
+Loose coupling is promoted with minimal effort and least intrusive mechanism. The facotry design pattern
+is more intrusive beacause components or services need to be requested explicity wheras in IOC the depen-
+dency is injected into requesting piece of code. Also some containers promote the desing to inerfaces not
+to implementations desing concepts by encouraging manged objects to implement a well defined service interface
+ of your own.
+ 
+IOC containers support eager instatiation and lazy loading of service. Containers are provided support 
+for instantiation for managed objects, cyclical deependencies, life cycles management, and dependency 
+resolution between managed objects.
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
