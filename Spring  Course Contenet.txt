@@ -1,0 +1,203 @@
+Getting Started:
+
+	What is Spring?
+	About Spring 4 and bug fix for final project
+	Setting up your System
+	Introducing Maven
+	Using Maven on the command Line
+	Spring HellWorld
+	Class Path Contexts
+	
+Basic Bean Configuration
+	
+	Constructor Arguments
+	Setting Bean Properties
+	Dependency Injection
+	Bean Scope
+	Init and Destory Methods
+	Factory Beans and Methods
+	The PNameSpces
+	Setting List Properties
+	Lists fo Beans
+	Inner Beans
+	Property Maps
+	Arbitrary Maps as Bean Properties
+	
+Autorwiring
+
+	Autowiring by Type
+	Autowiring by Name
+	Autowiring by Constructor
+	Default Autowiring
+	Removing Autowire Ambiguities
+	
+	Wiring With Annotations
+	 Adding Support for Annotation-based wiring
+	 The Autowired annotation
+	 optional beans
+	 using qualifers
+	 The resource annotation JSR -250
+	 Annotation Based init and destroy methods
+	 The inject annotation JSR - 330
+	 Autoatic Bean Discovery
+	 Setting property value by Annotation
+	 
+Spring Expession Langugage(SPEL)
+	
+	Introducing SPEL
+	Using SPEDL with Annotation
+	Some useful SPEL operatiors
+	
+Working with Databases
+	
+	Creating Database  with mysql
+	using porperty files
+	implementing the dao pattern
+	downloading the connector jar
+	configuring connection pooling with apache dbcp
+	jdbc template
+	querying the database
+	named parameters
+	update statements
+	getting placeholder values form beans
+	adding an update emthod to the dao
+	batch updates prepared statements
+	transactions
+	
+Spring MVC 
+	
+	A Basic non psirng web app
+	Brining in maven
+	dispatcher servlet
+	adding a controller
+	view resolver
+	adding data to the session
+	using spring data model
+	using jstl jsp taglib
+	configuring a jndi ds
+	brining the dao code
+	loading bean container with contextloaderlisterner
+	creating a datasource bean
+	adding a service layer
+	adding a new controller
+	getting url parametes
+	
+Working with web forms
+
+	creating a form 
+	getting form vlaues
+	adding css styles
+	serving static resources
+	adding hiberante form validation
+	making forms remember vaues
+	displaying form validation errors
+	crating a custom validation annotation
+	hooking up the controller and database code
+	exception handling in spring mvc
+	
+Aspect oriented pgrogramming - aop
+	
+	A basic project for working with aspects 
+	A simpel aspect example
+	annotaition based aspects
+	wildcard with pointcut expression
+	advice types after, around and other
+	proxies, interfaces and aspects
+	the within pointcut designator
+	This target and matchign subpackages
+	annotation-specific pcs
+	the bean pcd
+	the args pcd
+	getting target methods arguments
+	getting arguments usign args
+	combining pointcuts
+	introductions adding fuctionality using aspects
+	
+Spring Security and Managing Users
+	
+	Servlet Filters, A Review
+	Adding a spring security filter
+	adding a spring login fomr 
+	serving static resources access rules
+	cusotm login form 
+	display login errrors
+	authorising users form database
+	adding a create account form
+	mkaing the create accourn form work
+	adding vaidation to the user form 
+	dealing with duplicate usernames
+	storing validation messages in a property file
+	using jqeury to verify the password
+	using property file values in jsp
+	adding a logout link
+	working with roles
+	outputting text based on authentication status
+	row mapping with beanpropertyrowmapper
+	using custom authentication queries: case sensitive usernames
+	method level access control
+	catching secure annotation violations
+	adding remember me functionallity
+	encripting passwords
+	
+Apache Tiles and Spring MVC
+
+	Tiles dependencies
+	helloworld apache tiles
+	adding headiner and footers
+	formating the offers application
+	creating tiles form jsp files
+
+Logging and Testing
+
+	Adding log4j lgoging
+	resolving loggering conflicts
+	usign logging
+	creating a mysql test ds
+	usign spring profies
+	creating junit tests
+	coding the junti dao test
+	
+Improving the offers webapplication
+
+	normalizing the database
+	querying tables with foreign keys and refactoring the dao layer
+	refactoring the weblayer
+	getting the username of the logged in user
+	deleting from tables with foreignkey and little bugfix
+	custome rowmappers
+	conditional database dependent text in jsp
+	editing databae objects with form 
+	multiple form submits and Optional parameters
+	Adding a confirm dialog with Jquery
+	
+Hibernate
+	
+	Introduction to Hibernate
+	A simpel hibernate query
+	saving objects
+	validation groups and passoword encryption
+	translating hibernate exception to spring exceptions
+	queries with criteria
+	mapping many to one relationships
+	restricgiton joined tables 
+	multiple criteria
+	udpating objecgts
+	deleting objecgts
+	completing the offers DAO
+
+Spring WebFlow
+	
+	Introducing webflow
+	crating a flow registyr
+	hooking up url to webflows
+	connecting webflows and apache tiles
+	creating message tables
+	creating message class
+	adding a message form 
+	transitions
+	action states
+	linking to webflows
+	validating webflow forms
+	accessing user detaisl in webflow
+	
+	
